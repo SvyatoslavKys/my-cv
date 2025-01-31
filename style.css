@@ -1,88 +1,158 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    user-select: none;
-}
-.linl-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-}
-.skill-list>li{
-    text-align: start;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.link-a{
-    color: #fff;
-    text-decoration: none;
-    transition: 300ms;
-    transform: scale(1);
-}
-.link-a:hover{
-    transform: scale(1.1);
-    text-shadow: #1a252f;
-}
 .resume {
     display: flex;
     max-width: 1200px;
     margin: 20px auto;
-    background: #d6eaf6;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 
 .sidebar {
     background: #2c3e50;
-    color: white;
-    padding: 20px;
+    color: #fff;
+    padding: 30px;
     width: 30%;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .profile-pic {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+    transition: border-color 0.3s;
 }
 
-.sidebar h1, .sidebar h2, .sidebar h3 {
+.sidebar h1 {
+    font-size: 24px;
     margin: 10px 0;
+    color: #fff;
 }
 
-.details p, .sidebar ul {
+.sidebar h2 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #f4f4f4;
+    font-weight: 400;
+}
+
+.sidebar h3 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.details {
     list-style: none;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
 }
 
-.sidebar ul li {
-    padding: 5px 0;
+.details li {
+    margin: 15px 0;
 }
+
+.details a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.details a:hover {
+    color: #1abc9c;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.skill-list li {
+    margin: 8px 0;
+    font-size: 14px;
+    color: #f4f4f4;
+}
+
 
 .content {
     width: 70%;
     padding: 30px;
+    box-sizing: border-box;
 }
 
 .content h2 {
+    font-size: 22px;
     color: #2c3e50;
     border-bottom: 2px solid #2c3e50;
     padding-bottom: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s, border-color 0.3s;
 }
 
-.content h3 {
-    margin-top: 15px;
+.content p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+    transition: color 0.3s;
 }
 
 .content ul {
     padding-left: 20px;
 }
+
+.content ul li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+    transition: color 0.3s;
+}
+
+
+body.night-mode {
+    background-color: #1a252f;
+    color: #f4f4f4;
+}
+
+body.night-mode .resume {
+    background: #2c3e50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body.night-mode .sidebar {
+    background: #1a252f;
+}
+
+body.night-mode .content h2 {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+body.night-mode .content p,
+body.night-mode .content ul li {
+    color: #f4f4f4;
+}
+
 
 .controls {
     text-align: center;
@@ -97,53 +167,132 @@ body {
     margin: 5px;
     cursor: pointer;
     border-radius: 5px;
+    transition: background 0.3s;
 }
 
 .controls button:hover {
-    background: #1a252f;
+    background: #1abc9c;
 }
 
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .resume {
         flex-direction: column;
     }
 
-    .sidebar {
+    .sidebar, .content {
         width: 100%;
-        text-align: center;
+    }
+
+    .sidebar {
+        padding: 0;
     }
 
     .content {
-        width: 100%;
-        padding: 25px;
-    }
-    .skill-list>li{
-        text-align: center;
+        padding: 20px;
     }
 }
 
-@media (max-width: 768px) {
-    .content, .sidebar {
-        padding: 15px;
-        padding-right: 25px;
+@media (max-width: 480px) {
+    .sidebar h1 {
+        font-size: 20px;
     }
 
-    .controls {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .sidebar h2 {
+        font-size: 16px;
     }
 
-    .controls button {
-        width: 80%;
-        margin: 5px 0;
-    }
-    .sidebar h1, .sidebar h2, .sidebar h3 {
-        font-size: 17px;
-    }
-
-    p{
+    .sidebar h3 {
         font-size: 14px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content p, .content ul li {
+        font-size: 12px;
+    }
+}
+
+@media print {
+   
+    .controls {
+        display: none !important;
+    }
+
+    
+    body {
+        background-color: #fff !important;
+        color: #000 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .resume {
+        background-color: #fff !important;
+        box-shadow: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        height: 100vh !important; 
+    }
+
+    .sidebar {
+        background-color: #fff !important;
+        color: #000 !important;
+        width: 30% !important;
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+
+    .profile-pic {
+        width: 80px !important;
+        height: 80px !important;
+        border: 2px solid #000 !important;
+    }
+
+    .sidebar h1 {
+        font-size: 18px !important;
+    }
+
+    .sidebar h2 {
+        font-size: 14px !important;
+    }
+
+    .sidebar h3 {
+        font-size: 12px !important;
+    }
+
+    .details a {
+        color: #000 !important;
+        font-size: 10px !important;
+    }
+
+    .skill-list li {
+        font-size: 10px !important;
+    }
+
+    .content {
+        width: 70% !important;
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+
+    .content h2 {
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .content p, .content ul li {
+        font-size: 10px !important;
+        margin: 5px 0 !important;
+    }
+
+    
+    .resume {
+        overflow: hidden !important;
     }
 }

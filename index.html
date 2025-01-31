@@ -3,115 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title data-en="Resume - Sviatoslav Kysilytsia" data-pl="CV - Światosław Kysilytsia">Resume - Sviatoslav Kysilytsia</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   
+    
+    <div class="controls">
+        <button id="theme-toggle">🌙 Night Mode</button>
+        <button id="language-toggle">🇵🇱 Polish</button>
+        <button id="print-button">🖨️ Print</button>
+    </div>
+
     <div class="resume">
+       
         <div class="sidebar">
             <img src="./photo pro.png" alt="Profile Picture" class="profile-pic">
-            <h1>Sviatoslav Kysilytsia</h1>
-            <h2>Junior Front-end Developer</h2>
+            <h1 data-en="Sviatoslav Kysilytsia" data-pl="Światosław Kysilytsia">Sviatoslav Kysilytsia</h1>
+            <h2 data-en="Junior Front-end Developer" data-pl="Młodszy Front-end Developer">Junior Front-end Developer</h2>
             <ul class="details">
-                <li class="linl-list"> <p >Location: </p><a class="link-a" href="https://www.google.com/maps/place/Bytom,+Poland" target="_blank">Bytom, Poland</a></li>
-                <li class="linl-list"> <p >Phone: </p><a class="link-a" href="tel:+48 516 487 234">+48 516 487 234</a></li>
-                <li class="linl-list"> <p >Email: </p> <a class="link-a" href="mailto:svyat.ne@gmail.com?subject=Job%20Offer&body=We%20want%20to%20offer%20you%20a%20job">svyat.ne@gmail.com</a> </li>
+                <li><p data-en="Location:" data-pl="Lokalizacja:">Location:</p><a href="https://www.google.com/maps/place/Bytom,+Poland" target="_blank">Bytom, Poland</a></li>
+                <li><p data-en="Phone:" data-pl="Telefon:">Phone:</p><a href="tel:+48 516 487 234">+48 516 487 234</a></li>
+                <li><p data-en="Email:" data-pl="E-mail:">Email:</p><a href="mailto:svyat.ne@gmail.com">svyat.ne@gmail.com</a></li>
             </ul>
-            <h3 >Skills</h3>
+            <h3 data-en="Skills" data-pl="Umiejętności">Skills</h3>
             <ul class="skill-list">
-                <li>Jira</li>
-                <li>Confluence</li>
-                <li>Draw.io</li>
-                <li >Functional Testing</li>
-                <li >Data Analysis</li>
-                <li >Business Process Modeling</li>
-                <li >System Analysis</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js</li>
                 <li>Responsive Design</li>
-                <li>React.js (or other relevant front-end frameworks)</li>
                 <li>Version Control (Git)</li>
-                <li>Cross-browser compatibility</li>
-                <li>Debugging and troubleshooting</li>
-                <li>UI/UX Design principles</li>
-                <li>Front-end build tools (Webpack, NPM, etc.)</li>
-                <li>RESTful API integration</li>
-                <li>Code optimization for performance</li>
-                <li>Agile/Scrum methodology</li>
+                <li>RESTful API Integration</li>
+                <li>Front-end Build Tools (Webpack, NPM)</li>
+                <li>Debugging and Troubleshooting</li>
+                <li>Cross-browser Compatibility</li>
+                <li>UI/UX Design Principles</li>
+                <li>Agile/Scrum Methodology</li>
+                <li>Jira, Confluence</li>
+                <li>Functional Testing</li>
             </ul>
-            <h3 >Education</h3>
-            <p >KEIM - International Economic Management (2007-2012)</p>
-            <h3 >Languages</h3>
-            <p >Ukrainian - Fluent</p>
-            <p >English - A2</p>
-            <p >Polish - A2</p>
+            <h3 data-en="Education" data-pl="Edukacja">Education</h3>
+            <p><strong>KEIM</strong> - <span data-en="International Economic Management" data-pl="Międzynarodowe Zarządzanie Gospodarcze">International Economic Management</span> (2007-2012)</p>
+            <p><strong data-en="Online Courses" data-pl="Kursy Online">Online Courses</strong>: <span data-en="Front-end Development (HTML, CSS, JavaScript, React)" data-pl="Rozwój Front-end (HTML, CSS, JavaScript, React)">Front-end Development (HTML, CSS, JavaScript, React)</span> - Udemy, freeCodeCamp (2023-2024)</p>
+            <h3 data-en="Languages" data-pl="Języki">Languages</h3>
+            <p><strong data-en="Ukrainian" data-pl="Ukraiński">Ukrainian</strong> - <span data-en="Native" data-pl="Ojczysty">Native</span></p>
+            <p><strong data-en="English" data-pl="Angielski">English</strong> - <span data-en="Intermediate (A2)" data-pl="Średniozaawansowany (A2)">Intermediate (A2)</span></p>
+            <p><strong data-en="Polish" data-pl="Polski">Polish</strong> - <span data-en="Intermediate (A2)" data-pl="Średniozaawansowany (A2)">Intermediate (A2)</span></p>
         </div>
+
+       
         <main class="content">
-            <h2 >Profile</h2>
-            <p >Responsible employee striving for excellence. My diligence and dedication allow me to achieve goals. I believe in continuous self-improvement and am ready to take on additional tasks to maximize my contribution to the company's success.</p>
-            
-            <h2 >Work Experience</h2>
+            <h2 data-en="Profile" data-pl="Profil">Profile</h2>
+            <p data-en="Motivated Junior Front-end Developer with hands-on experience in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, and React, with a strong focus on clean code and performance optimization. Passionate about learning new technologies and contributing to impactful projects." 
+               data-pl="Zmotywowany Młodszy Front-end Developer z praktycznym doświadczeniem w tworzeniu responsywnych i przyjaznych dla użytkownika aplikacji internetowych. Biegły w HTML, CSS, JavaScript i React, z silnym naciskiem na czysty kod i optymalizację wydajności. Pasjonat nauki nowych technologii i przyczyniania się do wartościowych projektów.">
+                Motivated Junior Front-end Developer with hands-on experience in building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, and React, with a strong focus on clean code and performance optimization. Passionate about learning new technologies and contributing to impactful projects.
+            </p>
 
-            <h3>Front-end Developer Intern, Freelance, (Jun 2024 - Currently)</h3>
+            <h2 data-en="Work Experience" data-pl="Doświadczenie Zawodowe">Work Experience</h2>
+
+            <h3 data-en="Front-end Developer Intern, Freelance (Jun 2024 - Present)" data-pl="Stażysta Front-end Developer, Freelance (Czerwiec 2024 - Obecnie)">Front-end Developer Intern, Freelance (Jun 2024 - Present)</h3>
             <ul>
-                <li>Collaborating with senior developers to design and implement UI components.</li>
-                <li>Writing clean, reusable, and efficient HTML, CSS, and JavaScript code.</li>
-                <li>Assisting in the development of responsive web designs.</li>
-                <li>Participating in code reviews and contributing to improving code quality.</li>
-                <li>Debugging and troubleshooting issues across different browsers and devices.</li>
-                <li>Optimizing web applications for speed and scalability.</li>
-                <li>Working with front-end frameworks like React.</li>
-                <li>Collaborating with backend developers to integrate front-end with server-side logic.</li>
-                <li>Maintaining and updating website functionality and design as required.</li>
-                <li>Contributing to the development of user-friendly, interactive features.</li>
+                <li data-en="Developed responsive and interactive UI components using HTML, CSS, and JavaScript." 
+                    data-pl="Tworzenie responsywnych i interaktywnych komponentów UI przy użyciu HTML, CSS i JavaScript.">
+                    Developed responsive and interactive UI components using HTML, CSS, and JavaScript.
+                </li>
+                <li data-en="Collaborated with senior developers to build and maintain web applications using React.js." 
+                    data-pl="Współpraca z starszymi programistami przy tworzeniu i utrzymywaniu aplikacji internetowych w React.js.">
+                    Collaborated with senior developers to build and maintain web applications using React.js.
+                </li>
+                <li data-en="Optimized web performance, reducing load times by 15% through code refactoring and asset optimization." 
+                    data-pl="Optymalizacja wydajności stron internetowych, skrócenie czasu ładowania o 15% poprzez refaktoryzację kodu i optymalizację zasobów.">
+                    Optimized web performance, reducing load times by 15% through code refactoring and asset optimization.
+                </li>
+                <li data-en="Debugged and resolved cross-browser compatibility issues, ensuring seamless user experiences." 
+                    data-pl="Debugowanie i rozwiązywanie problemów z kompatybilnością między przeglądarkami, zapewnienie płynnych doświadczeń użytkownika.">
+                    Debugged and resolved cross-browser compatibility issues, ensuring seamless user experiences.
+                </li>
+                <li data-en="Participated in Agile sprints, contributing to code reviews and improving overall code quality." 
+                    data-pl="Uczestnictwo w sprintach Agile, udział w przeglądach kodu i poprawa ogólnej jakości kodu.">
+                    Participated in Agile sprints, contributing to code reviews and improving overall code quality.
+                </li>
+                <li data-en="Integrated RESTful APIs to enable dynamic data fetching and real-time updates." 
+                    data-pl="Integracja RESTful API w celu umożliwienia dynamicznego pobierania danych i aktualizacji w czasie rzeczywistym.">
+                    Integrated RESTful APIs to enable dynamic data fetching and real-time updates.
+                </li>
             </ul>
 
-            
-            <h3 >Business Analyst, Moyo, Kyiv (May 2023 - Jun 2024)</h3>
+            <h3 data-en="Business Analyst, Moyo, Kyiv (May 2023 - Jun 2024)" data-pl="Analityk Biznesowy, Moyo, Kijów (Maj 2023 - Czerwiec 2024)">Business Analyst, Moyo, Kyiv (May 2023 - Jun 2024)</h3>
             <ul>
-                <li>Requirement agreement with clients.</li>
-                <li>Business process description and technical documentation.</li>
-                <li>Testing scenarios and results.</li>
-                <li>Functional testing.</li>
-                <li>User training documentation.</li>
-                <li>System settings and consultations.</li>
-                <li>Bug fixes.</li>
+                <li data-en="Gathered and documented client requirements for system improvements." 
+                    data-pl="Zbieranie i dokumentowanie wymagań klientów dotyczących ulepszeń systemowych.">
+                    Gathered and documented client requirements for system improvements.
+                </li>
+                <li data-en="Created technical documentation and business process models using Draw.io." 
+                    data-pl="Tworzenie dokumentacji technicznej i modeli procesów biznesowych przy użyciu Draw.io.">
+                    Created technical documentation and business process models using Draw.io.
+                </li>
+                <li data-en="Conducted functional testing and provided user training for new system features." 
+                    data-pl="Przeprowadzanie testów funkcjonalnych i szkolenie użytkowników w zakresie nowych funkcji systemu.">
+                    Conducted functional testing and provided user training for new system features.
+                </li>
+                <li data-en="Collaborated with cross-functional teams to resolve system issues and bugs." 
+                    data-pl="Współpraca z zespołami interdyscyplinarnymi w celu rozwiązywania problemów i błędów systemowych.">
+                    Collaborated with cross-functional teams to resolve system issues and bugs.
+                </li>
             </ul>
-            
-            <h3 >Lead Analyst, Moyo, Kyiv (Jul 2022 - May 2023)</h3>
+
+            <h3 data-en="Lead Analyst, Moyo, Kyiv (Jul 2022 - May 2023)" data-pl="Główny Analityk, Moyo, Kijów (Lipiec 2022 - Maj 2023)">Lead Analyst, Moyo, Kyiv (Jul 2022 - May 2023)</h3>
             <ul>
-                <li>Task coordination for support team.</li>
-                <li>Ensuring data quality and workflow optimization.</li>
-                <li>Problem-solving in 1C system.</li>
-                <li>Development of department strategy.</li>
-                <li>Support team involvement in projects.</li>
-                <li>Data verification in Power BI.</li>
-                <li>Implementation of new stores and system integrations.</li>
+                <li data-en="Coordinated tasks for a support team of 5 members, ensuring timely resolution of issues." 
+                    data-pl="Koordynowanie zadań dla zespołu wsparcia składającego się z 5 osób, zapewnienie terminowego rozwiązywania problemów.">
+                    Coordinated tasks for a support team of 5 members, ensuring timely resolution of issues.
+                </li>
+                <li data-en="Optimized workflows and improved data accuracy by 20% through system enhancements." 
+                    data-pl="Optymalizacja przepływów pracy i poprawa dokładności danych o 20% poprzez ulepszenia systemowe.">
+                    Optimized workflows and improved data accuracy by 20% through system enhancements.
+                </li>
+                <li data-en="Developed and implemented strategies for department efficiency and project success." 
+                    data-pl="Opracowanie i wdrożenie strategii zwiększających efektywność działu i sukces projektów.">
+                    Developed and implemented strategies for department efficiency and project success.
+                </li>
             </ul>
-            
-            <h3 >Deputy Head of Computer Communications Analytics, Moyo, Kyiv (Feb 2022 - Jul 2022)</h3>
+
+            <h2 data-en="Projects" data-pl="Projekty">Projects</h2>
+            <h3 data-en="Portfolio Website" data-pl="Strona Portfolio">Portfolio Website</h3>
             <ul>
-                <li>Administration of information systems and access rights configuration.</li>
-                <li>Creation of instructions for support and training of employees.</li>
-                <li>Verification of completed requests and processing of user inquiries.</li>
-                <li>Operational consultations and user assistance.</li>
-                <li>Control of accounting systems and services synchronization (1C, Manhattan, XRM, website, etc.).</li>
-            </ul>
-            
-            <h3 >Computer Communications Analyst, Moyo, Kyiv (Feb 2021 - Feb 2022)</h3>
-            <ul>
-                <li>Administration of information systems and access rights configuration.</li>
-                <li>Processing incoming user requests regarding data accuracy and system functionality.</li>
-                <li>Operational consultations and user support.</li>
-                <li>Control of accounting systems and services, including 1C, Manhattan, XRM, website, etc.</li>
-                <li>Generating reports on key system nodes and databases.</li>
-                <li>Analysis of system errors and forwarding them for correction.</li>
-                <li>Participation in automation projects and implementation of new solutions.</li>
+                <li data-en="Built a responsive portfolio website using HTML, CSS, and JavaScript." 
+                    data-pl="Tworzenie responsywnej strony portfolio przy użyciu HTML, CSS i JavaScript.">
+                    Built a responsive portfolio website using HTML, CSS, and JavaScript.
+                </li>
+                <li data-en="Implemented React.js for dynamic content rendering." 
+                    data-pl="Wdrożenie React.js do dynamicznego renderowania treści.">
+                    Implemented React.js for dynamic content rendering.
+                </li>
+                <li data-en="Deployed the site using GitHub Pages." 
+                    data-pl="Wdrożenie strony przy użyciu GitHub Pages.">
+                    Deployed the site using GitHub Pages.
+                </li>
             </ul>
         </main>
     </div>
-    
+
+    <script src="./script.js"></script>
 </body>
 </html>
