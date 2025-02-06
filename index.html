@@ -8,22 +8,31 @@
 </head>
 <body>
     
-    <div class="controls">
-        <button id="theme-toggle">🌙 Night Mode</button>
-        <button id="language-toggle">🇵🇱 Polish</button>
-        <button id="print-button">🖨️ Print</button>
-    </div>
+    
 
     <div class="resume">
        
         <div class="sidebar">
+            <div class="controls">
+                <button id="theme-toggle">🌙 Night Mode</button>
+                <button id="language-toggle">🇵🇱 Polish</button>
+                <button id="print-button">🖨️ Print</button>
+            </div>
             <img src="./photo pro.png" alt="Profile Picture" class="profile-pic">
-            <h1 data-en="Sviatoslav Kysilytsia" data-pl="Światosław Kysilytsia">Sviatoslav Kysilytsia</h1>
+            <h1 data-en="Sviatoslav Kysilytsia" data-pl="Sviatoslav Kysilytsia">Sviatoslav Kysilytsia</h1>
             <h2 data-en="Junior Front-end Developer" data-pl="Młodszy Front-end Developer">Junior Front-end Developer</h2>
             <ul class="details">
-                <li><p data-en="Location:" data-pl="Lokalizacja:">Location:</p><a href="https://www.google.com/maps/place/Bytom,+Poland" target="_blank">Bytom, Poland</a></li>
-                <li><p data-en="Phone:" data-pl="Telefon:">Phone:</p><a href="tel:+48 516 487 234">+48 516 487 234</a></li>
-                <li><p data-en="Email:" data-pl="E-mail:">Email:</p><a href="mailto:svyat.ne@gmail.com?subject=Job%20Offer&body=We%20want%20to%20offer%20you%20a%20job">svyat.ne@gmail.com</a></li>
+                <li class="details-list list-margin"><p data-en="Location:" data-pl="Lokalizacja:">Location:</p><a href="https://www.google.com/maps/place/Bytom,+Poland" target="_blank">Bytom, Poland</a></li>
+                <li class="details-list">
+                    <button id="copyPhone" class="copy-btn">
+                    <img width="32px" height="32px" src="./copy-svgrepo-com.svg" alt="copy svg">
+                    </button>
+                    <p data-en="Phone:" data-pl="Telefon:">Phone:</p><a href="tel:+48 516 487 234">+48 516 487 234</a></li>
+                <li class="details-list"> 
+                    <button id="copyEmail" class="copy-btn">
+                    <img width="32px" height="32px" src="./copy-svgrepo-com.svg" alt="copy svg">
+                    </button>
+                    <p data-en="Email:" data-pl="E-mail:">Email:</p><a href="mailto:svyat.ne@gmail.com?subject=Job%20Offer&body=We%20want%20to%20offer%20you%20a%20job">svyat.ne@gmail.com</a></li>
             </ul>
             <h3 data-en="Skills" data-pl="Umiejętności">Skills</h3>
             <ul class="skill-list">

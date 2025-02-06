@@ -22,3 +22,31 @@ function updateTextContent(lang) {
 document.getElementById('print-button').addEventListener('click', () => {
     window.print(); 
 });
+
+
+const informationToCopyPhone = "+48 516 487 234";
+const informationToCopyMail = "svyat.ne@gmail.com";
+const copyPhone = document.getElementById('copyPhone');
+const copyEmail = document.getElementById('copyEmail');
+copyPhone.addEventListener('click', () => {
+    navigator.clipboard.writeText(informationToCopyPhone)
+        .then(() => {
+            console.log('Information copied to clipboard:', informationToCopyPhone);
+            alert('Copied to clipboard!');
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy to clipboard.');
+        });
+});
+copyEmail.addEventListener('click', () => {
+    navigator.clipboard.writeText(informationToCopyMail)
+        .then(() => {
+            console.log('Information copied to clipboard:', informationToCopyMail);
+            alert('Copied to clipboard!');
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+            alert('Failed to copy to clipboard.');
+        });
+});

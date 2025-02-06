@@ -64,26 +64,41 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.details li {
-    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .details a {
     color: #fff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 300ms;
+    
 }
 
 .details a:hover {
     color: #1abc9c;
+    transform: scale(0.9);
+}
+.copy-btn{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    transition: 300ms;
+}
+.copy-btn:hover{
+    transform: scale(0.9);
+}
+.details-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .skill-list {
     list-style: none;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 
 .skill-list li {
